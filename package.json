@@ -68,7 +68,7 @@
   "dependencies": {
     "bignumber.js": "^9.0.0",
     "bitcoincom-link": "^0.1.10",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "lottie-react-web": "^2.1.4",
     "qrcode.react": "^1.0.0",
     "react-circular-progressbar": "^2.0.3",
