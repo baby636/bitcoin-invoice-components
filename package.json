@@ -7,10 +7,11 @@
     "test": "webpack --mode=development",
     "build": "webpack --mode=production",
     "storybook": "start-storybook -p 9001",
-    "prepublish": "npm run build",
+    "prepublish": "npm run snyk-protect && npm run build",
     "build-storybook": "build-storybook",
     "format": "prettier --write \"src/**/*.js\"",
-    "analyse": "NODE_ENV=analyse webpack --mode=production"
+    "analyse": "NODE_ENV=analyse webpack --mode=production",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,14 +39,14 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-actions": "^6.1.0",
+    "@storybook/addon-knobs": "^6.1.0",
     "@storybook/addon-links": "^5.1.9",
-    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-notes": "^5.3.0",
     "@storybook/addon-options": "^5.1.9",
-    "@storybook/addon-storysource": "^5.1.9",
+    "@storybook/addon-storysource": "^6.1.0",
     "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9",
+    "@storybook/react": "^6.1.20",
     "@storybook/theming": "^5.1.9",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.1.0",
@@ -57,7 +58,7 @@
     "svg-url-loader": "^3.0.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.37.0",
-    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-bundle-analyzer": "^4.0.0",
     "webpack-cli": "^3.3.6"
   },
   "peerDependencies": {
@@ -68,11 +69,13 @@
   "dependencies": {
     "bignumber.js": "^9.0.0",
     "bitcoincom-link": "^0.1.10",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lottie-react-web": "^2.1.4",
     "qrcode.react": "^1.0.0",
     "react-circular-progressbar": "^2.0.3",
     "react-copy-to-clipboard": "^5.0.2",
-    "react-image": "^4.0.3"
-  }
+    "react-image": "^4.0.3",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
