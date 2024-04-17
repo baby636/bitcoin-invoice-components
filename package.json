@@ -39,7 +39,7 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-knobs": "^7.0.0",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addon-options": "^5.1.9",
@@ -68,7 +68,7 @@
   "dependencies": {
     "bignumber.js": "^9.0.0",
     "bitcoincom-link": "^0.1.10",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.17",
     "lottie-react-web": "^2.1.4",
     "qrcode.react": "^1.0.0",
     "react-circular-progressbar": "^2.0.3",
